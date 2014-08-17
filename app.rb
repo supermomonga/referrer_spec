@@ -40,6 +40,15 @@ post '/hi' do
 end
 
 
+# Additonal page samples
+
+## JSONP
+get '/hello' do
+  # data = ["hello","hi","hallo"]
+  # jsonp data
+end
+
+
 
 # Assets
 

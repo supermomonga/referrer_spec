@@ -7,6 +7,13 @@ gem 'slim'
 gem 'sass'
 gem 'coffee-script'
 
+
+# Optional gems
+
+## https://github.com/shtirlic/sinatra-jsonp
+gem 'sinatra-jsonp'
+
+
 group :development do
   gem 'sinatra-contrib'
   gem 'foreman'
