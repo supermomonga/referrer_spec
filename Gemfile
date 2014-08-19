@@ -11,6 +11,10 @@ gem 'coffee-script'
 
 # Optional gems
 
+## DataStore
+# gem 'redis'
+# gem 'mongo'
+
 ## https://github.com/shtirlic/sinatra-jsonp
 gem 'sinatra-jsonp'
 
