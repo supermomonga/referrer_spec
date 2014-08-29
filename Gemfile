@@ -14,6 +14,9 @@ gem 'coffee-script'
 # gem 'newrelic_rpm'
 # gem 'redis'
 # gem 'mongo'
+# gem 'data_mapper'
+# gem 'dm-sqlite-adapter', group: :development
+# gem 'dm-postgres-adapter', group: :production
 
 ## https://github.com/shtirlic/sinatra-jsonp
 # gem 'sinatra-jsonp'
@@ -24,6 +27,7 @@ group :development do
   gem 'foreman'
   gem 'rspec'
   gem 'guard-rspec', require: false
+  gem 'pry'
 end
 
 group :tasks do
