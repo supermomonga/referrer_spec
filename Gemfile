@@ -11,15 +11,21 @@ gem 'coffee-script'
 
 # Optional gems
 
-## DataStore
+# gem 'newrelic_rpm'
 # gem 'redis'
 # gem 'mongo'
 
 ## https://github.com/shtirlic/sinatra-jsonp
-gem 'sinatra-jsonp'
+# gem 'sinatra-jsonp'
 
 
 group :development do
   gem 'sinatra-contrib'
   gem 'foreman'
+  gem 'rspec'
+  gem 'guard-rspec', require: false
+end
+
+group :tasks do
+  gem 'dotenv'
 end
