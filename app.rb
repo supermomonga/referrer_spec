@@ -3,7 +3,7 @@
 require 'bundler'
 Bundler.require
 
-class App < Sinatra::base
+class App < Sinatra::Base
 
   configure :development do
     register Sinatra::Reloader
