@@ -3,6 +3,7 @@ ruby '2.1.2'
 
 gem 'sinatra'
 gem 'unicorn'
+gem 'gctools', require: 'gctools/oobgc'
 
 gem 'slim'
 gem 'sass'
