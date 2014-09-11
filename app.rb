@@ -5,6 +5,12 @@ Bundler.require
 
 class App < Sinatra::Base
 
+  def initialize *args
+    require './models'
+    DataMapper.finalize.auto_upgrade!
+    super
+  end
+
   configure :development do
     require 'sinatra/reloader'
     register Sinatra::Reloader

@@ -15,9 +15,9 @@ gem 'coffee-script'
 # gem 'newrelic_rpm'
 # gem 'redis'
 # gem 'mongo'
-# gem 'data_mapper'
-# gem 'dm-sqlite-adapter', group: :development
-# gem 'dm-postgres-adapter', group: :production
+gem 'data_mapper'
+gem 'dm-sqlite-adapter', group: :development
+gem 'dm-postgres-adapter', group: :production
 
 ## https://github.com/shtirlic/sinatra-jsonp
 # gem 'sinatra-jsonp'

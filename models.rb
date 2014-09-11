@@ -15,9 +15,3 @@ class ModelName
   property :created_at   , DateTime , required: true
 end
 
-if __FILE__ == $PROGRAM_NAME
-  DataMapper.finalize.auto_migrate!
-else
-  DataMapper.finalize.auto_upgrade!
-end
-
