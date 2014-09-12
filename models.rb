@@ -8,7 +8,7 @@ DataMapper::Property::String.length 255
 
 class ModelName
   include DataMapper::Resource
-  property :id           , Integer  , key: true
+  property :id           , Serial
   property :foo          , Integer  , required: true, index: true
   property :bar          , String   , required: true, length: 5
   property :updated_at   , Date     , required: true
