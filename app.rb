@@ -28,10 +28,9 @@ class App < Sinatra::Base
       referrer: request.referrer,
       ip_address: request.ip,
     }
-    puts "\n\n"
+    puts '-' * 20
     puts @browser[:page].upcase
     pp @browser
-    puts "\n\n"
     redirect to('/inside_iframe_redirected')
   end
 
@@ -42,10 +41,9 @@ class App < Sinatra::Base
       referrer: request.referrer,
       ip_address: request.ip,
     }
-    puts "\n\n"
+    puts '-' * 20
     puts @browser[:page].upcase
     pp @browser
-    puts "\n\n"
     'Hello World'
     # slim :browser_information
   end
