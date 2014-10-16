@@ -3,15 +3,16 @@ require 'bundler'
 Bundler.require
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/db/development.db")
-DataMapper::Property::String.length 255
+DataMapper::Property::String.length 1024
 
 
-class ModelName
+class Log
   include DataMapper::Resource
   property :id         , Serial
-  property :foo        , Integer  , required: true, index: true
-  property :bar        , String   , required: true, length: 5
-  property :updated_at , Date     , required: true
+  property :page       , String   , required: true, index: true
+  property :referrer   , String   , required: true, index: true
+  property :user_agent , String   , required: true, index: true
+  property :ip_address , String   , required: true, length: 15
   property :created_at , DateTime , required: true
 end
 
